@@ -157,7 +157,7 @@ new google.translate.TranslateElement({pageLanguage: 'en', layout: google.transl
   <script>
 
 
-let apiKey = '230fbe60e5d94960a66c06393212d321';
+let apiKey = '80703bd8ccbe46bf834ceea00008214a';
 $.getJSON("https://ipgeolocation.abstractapi.com/v1/?api_key=" + apiKey, function(data) {
 console.log(data)
     $.ajax({
@@ -167,7 +167,8 @@ console.log(data)
     dataType : "json",
     data : JSON.stringify(data)
 }).done(function(res) {
-    console.log(res)
+  console.log(res)
+   return res
 });
 
 }); 
